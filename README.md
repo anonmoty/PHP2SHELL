@@ -1,41 +1,18 @@
-# PHP2SHELL
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
-<!--                        PHP2SHELL - README.md                            -->
-<!--              Professional Shell Uploader & Backdoor Tool                -->
-<!-- ═══════════════════════════════════════════════════════════════════════ -->
+# 🐚 PHP2SHELL
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:CC0000,100:000000&height=200&section=header&text=PHP2SHELL&fontSize=80&fontColor=FF4500&animation=fadeIn&fontAlignY=40&desc=Upload%20%7C%20Bypass%20%7C%20Execute&descAlignY=60&descSize=20&descColor=FF4500" width="100%" />
 
 <div align="center">
 
-# 🐚 PHP2SHELL
-
-### `Upload • Bypass • Execute`
-
 **A Python-based PHP shell uploader and backdoor framework for red teamers.**
 
-[![Version](https://img.shields.io/badge/version-1.0.0-red?style=flat-square)](https://github.com/anonmoty/PHP2SHELL)
-[![Python](https://img.shields.io/badge/python-3.8+-green?style=flat-square)](https://python.org)
-[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20win%20%7C%20mac-red?style=flat-square)](https://github.com/anonmoty/PHP2SHELL)
-[![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)](https://github.com/anonmoty/PHP2SHELL)
+[![Version](https://img.shields.io/badge/version-1.0.0-CC0000?style=flat-square&labelColor=000000)](https://github.com/anonmoty/PHP2SHELL)
+[![Python](https://img.shields.io/badge/python-3.8+-CC0000?style=flat-square&labelColor=000000)](https://python.org)
+[![License](https://img.shields.io/badge/license-MIT-CC0000?style=flat-square&labelColor=000000)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20win%20%7C%20mac-CC0000?style=flat-square&labelColor=000000)](https://github.com/anonmoty/PHP2SHELL)
+[![Status](https://img.shields.io/badge/status-active-CC0000?style=flat-square&labelColor=000000)](https://github.com/anonmoty/PHP2SHELL)
 
 </div>
-
----
-
-```
-████████████████████████████████████████████████████████████████████████
-█                                                                      █
-█   ██████╗ ██╗  ██╗██████╗ ██████╗ ███████╗██╗  ██╗███████╗██╗     ██╗     
-█   ██╔══██╗██║  ██║██╔══██╗╚════██╗██╔════╝██║  ██║██╔════╝██║     ██║     
-█   ██████╔╝███████║██████╔╝ █████╔╝███████╗███████║█████╗  ██║     ██║     
-█   ██╔═══╝ ██╔══██║██╔═══╝  ╚═══██╗╚════██║██╔══██║██╔══╝  ██║     ██║     
-█   ██║     ██║  ██║██║     ██████╔╝███████║██║  ██║███████╗███████╗███████╗
-█   ╚═╝     ╚═╝  ╚═╝╚═╝     ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
-█                                                                      █
-█                    [ Upload | Bypass | Execute ]                     █
-█                                                                      █
-████████████████████████████████████████████████████████████████████████
-```
 
 ---
 
@@ -59,11 +36,11 @@
 
 ---
 
-## 🎯 What Is PHP2SHELL?
+## 🎯 Overview
 
-**PHP2SHELL** is a Python-based **PHP shell uploader and backdoor framework** designed for **red teamers, penetration testers, and bug bounty hunters**. It helps you upload PHP backdoors, bypass basic filters, and gain remote command execution in authorized environments.
+**PHP2SHELL** is a Python-based PHP shell uploader and backdoor framework designed for red teamers, penetration testers, and bug bounty hunters. It helps you upload PHP backdoors, bypass basic filters, and gain remote command execution in authorized environments.
 
-Whether you're testing file upload vulnerabilities or validating a web shell finding — PHP2SHELL gives you the **tools to execute**.
+Whether you're testing file upload vulnerabilities or validating a web shell finding — PHP2SHELL gives you the tools to execute.
 
 ---
 
@@ -79,7 +56,7 @@ Whether you're testing file upload vulnerabilities or validating a web shell fin
 │  [06] ⚡ Multi-Threaded       → Fast parallel uploads                │
 │  [07] 📊 Live Progress Bar    → Real-time terminal feedback          │
 │  [08] 📝 JSON Reports         → Structured logs                      │
-│  [09] 🎨 Hacker Terminal UI   → Red + Green aesthetic                │
+│  [09] 🎨 Hacker Terminal UI   → Red + Black aesthetic                │
 │  [10] 🧰 Modular Design       → Extend with custom modules           │
 └─────────────────────────────────────────────────────────────────────┘
 ```
@@ -89,18 +66,18 @@ Whether you're testing file upload vulnerabilities or validating a web shell fin
 ## 🚀 Installation
 
 ```bash
-# Clone the repo
+# 1. Clone the repo
 git clone https://github.com/anonmoty/PHP2SHELL.git
 cd PHP2SHELL
 
-# Install dependencies
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# Run
+# 3. Run the tool
 python php2shell.py --help
 ```
 
-**One-liner:**
+**One-liner (copy-paste):**
 
 ```bash
 git clone https://github.com/anonmoty/PHP2SHELL.git && cd PHP2SHELL && pip install -r requirements.txt && python php2shell.py --help
@@ -124,16 +101,14 @@ python php2shell.py --url https://target.com/upload.php --threads 10 \
 
 ### CLI Flags
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│  --url          →  Target upload URL                                │
-│  --payload      →  Path to PHP payload                              │
-│  --threads      →  Number of threads (default: 10)                  │
-│  --output       →  Report output path                               │
-│  --verbose      →  Verbose logging                                  │
-│  --help         →  Show help                                        │
-└─────────────────────────────────────────────────────────────────────┘
-```
+| Flag | Description |
+|:---|:---|
+| `--url` | Target upload URL |
+| `--payload` | Path to PHP payload |
+| `--threads` | Number of threads (default: 10) |
+| `--output` | Report output path |
+| `--verbose` | Enable verbose logging |
+| `--help` | Show help menu |
 
 ---
 
@@ -151,9 +126,9 @@ graph LR
     G --> H[Generate Report]
     H --> I[Done]
 
-    style A fill:#1a0000,stroke:#FF0000,color:#00FF00
-    style E fill:#1a0000,stroke:#FF0000,color:#00FF00
-    style I fill:#1a0000,stroke:#FF0000,color:#00FF00
+    style A fill:#1a0000,stroke:#CC0000,color:#FF4500
+    style E fill:#1a0000,stroke:#CC0000,color:#FF4500
+    style I fill:#1a0000,stroke:#CC0000,color:#FF4500
 ```
 
 1. **Detect** — Finds file upload forms
@@ -233,16 +208,16 @@ pip install -r requirements.txt
 
 ## 🎨 Terminal Theme
 
-PHP2SHELL uses a **red + green** hacker palette:
+PHP2SHELL uses a **red + black** hacker palette:
 
 ```python
 THEME = {
     "primary":   "\033[38;5;196m",  # Bright Red
-    "secondary": "\033[38;5;46m",   # Matrix Green
+    "secondary": "\033[38;5;202m",  # Dark Red
     "accent":    "\033[38;5;214m",  # Amber
     "error":     "\033[38;5;196m",  # Red
     "warning":   "\033[38;5;220m",  # Yellow
-    "info":      "\033[38;5;46m",   # Green
+    "info":      "\033[38;5;51m",   # Cyan
     "reset":     "\033[0m",
 }
 ```
@@ -292,7 +267,7 @@ python php2shell.py --url https://target.com/upload.php --bypass encoded
 │  [x] Basic bypass techniques                                        │
 │  [x] Remote shell execution                                         │
 │  [x] JSON reports                                                   │
-│  [x] Red + Green terminal UI                                        │
+│  [x] Hacker terminal UI                                             │
 │  [ ] Advanced WAF bypass                                            │
 │  [ ] Multi-format payloads                                          │
 │  [ ] Docker image                                                   │
